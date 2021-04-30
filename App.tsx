@@ -8,7 +8,7 @@ const StyledView = styled.SafeAreaView`
   background-color: #fff;
   align-items: center;
   justify-content: center;
-  padding-top: ${Platform.OS === 'android' ? 25 : 0};
+  padding-top: ${Platform.OS === 'android' ? '25px' : 0};
 `;
 
 export default function App() {

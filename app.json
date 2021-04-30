@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "react-native-advanced-to-do",
-    "slug": "react-native-advanced-to-do",
+    "name": "react-native-basic-to-do",
+    "slug": "react-native-basic-to-do",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",

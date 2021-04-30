@@ -1,4 +1,4 @@
-# (React Native) Advanced To Do List
+# (React Native) Basic To Do List
 
 Project for completing the course for studies.
 
@@ -7,7 +7,7 @@ Project for completing the course for studies.
 Use commands:
 
 ```
-git clone https://github.com/aXenDeveloper/react-native-advanced-to-do
+git clone https://github.com/aXenDeveloper/react-native-basic-to-do
 
 npm i
 

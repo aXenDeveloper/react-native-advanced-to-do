@@ -1,21 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { Text, Platform } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import { Platform } from 'react-native';
 import styled from 'styled-components/native';
+import Tasks from './components/tasks/Tasks';
 
 const StyledView = styled.SafeAreaView`
   flex: 1;
-  background-color: #fff;
-  align-items: center;
-  justify-content: center;
+  background-color: #e6e6ec;
   padding-top: ${Platform.OS === 'android' ? '25px' : 0};
 `;
 
-export default function App() {
+const App = () => {
   return (
     <StyledView>
-      <Text>Open up App.tsx to start working on your app!</Text>
+      <Tasks />
       <StatusBar style="auto" />
     </StyledView>
   );
-}
+};
+
+export default App;

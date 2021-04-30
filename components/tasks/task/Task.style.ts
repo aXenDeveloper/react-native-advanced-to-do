@@ -14,5 +14,5 @@ export const TaskCheck = styled.View`
   height: 24px;
   background-color: #c72c20;
   border-radius: 5px;
-  margin-right: 10px;
+  margin-right: 15px;
 `;

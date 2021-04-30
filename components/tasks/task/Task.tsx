@@ -5,9 +5,9 @@ import { TaskCheck, TaskStyle } from './Task.style';
 const Task: FC = ({ children }) => {
   return (
     <TaskStyle>
-      <TaskCheck>
-        <TouchableOpacity></TouchableOpacity>
-      </TaskCheck>
+      <TouchableOpacity>
+        <TaskCheck></TaskCheck>
+      </TouchableOpacity>
 
       <Text>{children}</Text>
     </TaskStyle>

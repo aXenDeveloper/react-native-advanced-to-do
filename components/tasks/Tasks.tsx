@@ -5,11 +5,11 @@ import { TasksList, TasksStyle, TitleTasks } from './Tasks.style';
 
 const Tasks = () => {
   return (
-    <TasksStyle style={StyleSheet.absoluteFill}>
+    <TasksStyle>
       <TitleTasks>Tasks</TitleTasks>
 
       <TasksList>
-        <Task>Something to do Something to do Something to do Something to do</Task>
+        <Task>Something to do</Task>
         <Task>Something to do</Task>
         <Task>Something to do</Task>
         <Task>Something to do</Task>

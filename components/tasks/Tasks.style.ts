@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const TasksStyle = styled.View`
-  margin-top: 40px;
+  margin-top: 20px;
 `;
 
 export const TitleTasks = styled.Text`
@@ -12,4 +12,5 @@ export const TitleTasks = styled.Text`
 
 export const TasksList = styled.ScrollView`
   padding: 0 20px;
+  height: 70%;
 `;

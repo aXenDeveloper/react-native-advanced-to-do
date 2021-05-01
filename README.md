@@ -26,5 +26,6 @@ npm run web // if you want run on Web
 | [React Native](https://reactnative.dev/)            | Native apps for Android and iOS using React |
 | [Typescript](https://www.typescriptlang.org/)       | Types in JavaScript                         |
 | [Styled components](https://styled-components.com/) | Style in JS                                 |
+| [uuid](https://www.npmjs.com/package/uuid)          | Create a random UUID                        |
 
 ## 📷 Graphics

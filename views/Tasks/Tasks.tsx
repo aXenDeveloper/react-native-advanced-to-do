@@ -14,18 +14,15 @@ type TasksType = {
 
 const TasksView = () => {
   const [tasks, setTasks] = useState<TasksType>([]);
-  const [taskFormValue, setTaskFormValue] = useState('');
 
-  const handleSubmit = () => {
+  const addTask = (value: string) => {
     setTasks([
       ...tasks,
       {
         id: uuid(),
-        value: taskFormValue
+        value: value
       }
     ]);
-
-    setTaskFormValue('');
   };
 
   return (
@@ -38,11 +35,7 @@ const TasksView = () => {
         <TasksListEmpty />
       )}
 
-      <Form
-        taskFormValue={taskFormValue}
-        setTaskFormValue={setTaskFormValue}
-        handleSubmit={handleSubmit}
-      />
+      <Form addTask={addTask} />
     </>
   );
 };

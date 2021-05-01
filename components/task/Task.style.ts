@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 export const TaskStyle = styled.View`
   background-color: #fff;
   padding: 15px;
-  margin: 10px 0;
+  margin: 10px 20px;
   border-radius: 10px;
   flex-direction: row;
   align-items: center;

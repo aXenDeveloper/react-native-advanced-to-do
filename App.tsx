@@ -2,8 +2,7 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { Platform, StyleSheet } from 'react-native';
 import styled from 'styled-components/native';
-import Tasks from './components/tasks/Tasks';
-import Form from './components/form/Form';
+import Tasks from './views/Tasks/Tasks';
 
 const StyledView = styled.SafeAreaView`
   flex: 1;
@@ -16,8 +15,6 @@ const App = () => {
   return (
     <StyledView style={StyleSheet.absoluteFill}>
       <Tasks />
-
-      <Form />
 
       <StatusBar style="auto" />
     </StyledView>

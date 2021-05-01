@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Text, TouchableOpacity, View } from 'react-native';
+import { Text, TouchableOpacity } from 'react-native';
 import { TaskCheck, TaskStyle } from './Task.style';
 
 const Task: FC = ({ children }) => {

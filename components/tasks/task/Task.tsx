@@ -2,8 +2,8 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import React, { FC, useState } from 'react';
 import { TouchableOpacity } from 'react-native';
-import { TaskCheck, TaskStyle, stylesTask, TaskText } from './Task.style';
-import { TaskType } from './Task.type';
+import { TaskCheck, TaskStyle, stylesTask, TaskText } from './taskStyles';
+import { TaskType } from './taskTypes';
 
 const Task: FC<TaskType> = ({ children, setTasks, tasks, id }) => {
   const [isCheck, setIsCheck] = useState(false);

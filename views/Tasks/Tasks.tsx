@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { FlatList } from 'react-native';
 import Form from '../../components/form/Form';
 import Task from '../../components/tasks/task/Task';
-import { TitleTasksView } from './Tasks.style';
+import { TitleTasksView } from './tasksStyles';
 import 'react-native-get-random-values';
 import { v4 as uuid } from 'uuid';
 import TasksListEmpty from '../../components/tasks/tasksListEmpty/TasksListEmpty';
-import { TasksType } from '../../types/views/taskType';
+import { TasksType } from './taskTypes';
 
 const TasksView = () => {
   const [tasks, setTasks] = useState<TasksType>([]);

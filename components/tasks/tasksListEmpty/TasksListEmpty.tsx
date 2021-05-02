@@ -1,5 +1,5 @@
 import React from 'react';
-import { TasksListEmptyStyle, TasksListEmptyTextStyle } from './TasksListEmpty.style';
+import { TasksListEmptyStyle, TasksListEmptyTextStyle } from './tasksListEmptyStyles';
 
 const TasksListEmpty = () => (
   <TasksListEmptyStyle>

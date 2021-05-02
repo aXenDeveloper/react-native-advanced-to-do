@@ -1,4 +1,4 @@
-import { TasksType } from '../../../types/views/taskType';
+import { TasksType } from '../../../views/Tasks/taskTypes';
 
 export type TaskType = {
   id: string;

@@ -2,8 +2,8 @@ import React, { FC, useState } from 'react';
 import { Platform, Alert } from 'react-native';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
-import { FormStyle, FormTextInput, FormTouchable } from './Form.style';
-import { FormType } from './Form.type';
+import { FormStyle, FormTextInput, FormTouchable } from './formStyles';
+import { FormType } from './formTypes';
 
 const Form: FC<FormType> = ({ addTask }) => {
   const [taskFormValue, setTaskFormValue] = useState('');

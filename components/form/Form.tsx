@@ -1,5 +1,5 @@
 import React, { FC, useState } from 'react';
-import { Text, Platform } from 'react-native';
+import { Text, Platform, Alert } from 'react-native';
 import { FormStyle, FormTextInput, FormTouchable } from './Form.style';
 import { FormType } from './Form.type';
 
@@ -10,8 +10,13 @@ const Form: FC<FormType> = ({ addTask }) => {
     setTaskFormValue(text);
   };
 
-  const handleSubmit = () => {
-    addTask(taskFormValue);
+  const handleSubmit = (value: string) => {
+    if (value === '') {
+      Alert.alert('Oops something went wrong!', 'You cannot add an empty task.', [{ text: 'OK' }]);
+      return;
+    }
+
+    addTask(value);
     setTaskFormValue('');
   };
 
@@ -23,7 +28,7 @@ const Form: FC<FormType> = ({ addTask }) => {
         value={taskFormValue}
       />
 
-      <FormTouchable onPress={handleSubmit}>
+      <FormTouchable onPress={() => handleSubmit(taskFormValue)}>
         <Text>+</Text>
       </FormTouchable>
     </FormStyle>

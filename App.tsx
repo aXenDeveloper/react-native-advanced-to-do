@@ -1,8 +1,10 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { Platform, StyleSheet } from 'react-native';
+import { Platform } from 'react-native';
 import styled from 'styled-components/native';
 import Tasks from './views/Tasks/Tasks';
+import AppLoading from 'expo-app-loading';
+import { useFonts, Inter_400Regular } from '@expo-google-fonts/inter';
 
 const StyledView = styled.SafeAreaView`
   flex: 1;
@@ -12,8 +14,16 @@ const StyledView = styled.SafeAreaView`
 `;
 
 const App = () => {
+  let [fontsLoaded] = useFonts({
+    Inter_400Regular
+  });
+
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  }
+
   return (
-    <StyledView style={StyleSheet.absoluteFill}>
+    <StyledView>
       <Tasks />
 
       <StatusBar style="auto" />

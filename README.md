@@ -21,11 +21,12 @@ npm run web // if you want run on Web
 
 ## 📂 Packages
 
-| Packages                                            | Description                                 |
-| --------------------------------------------------- | ------------------------------------------- |
-| [React Native](https://reactnative.dev/)            | Native apps for Android and iOS using React |
-| [Typescript](https://www.typescriptlang.org/)       | Types in JavaScript                         |
-| [Styled components](https://styled-components.com/) | Style in JS                                 |
-| [uuid](https://www.npmjs.com/package/uuid)          | Create a random UUID                        |
+| Packages                                                     | Description                                 |
+| ------------------------------------------------------------ | ------------------------------------------- |
+| [React Native](https://reactnative.dev/)                     | Native apps for Android and iOS using React |
+| [Typescript](https://www.typescriptlang.org/)                | Types in JavaScript                         |
+| [Styled components](https://styled-components.com/)          | Style in JS                                 |
+| [uuid](https://www.npmjs.com/package/uuid)                   | Create a random UUID                        |
+| [expo-font](https://docs.expo.io/guides/using-custom-fonts/) | Fonts for expo                              |
 
 ## 📷 Graphics

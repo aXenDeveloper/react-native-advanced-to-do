@@ -8,7 +8,7 @@ const Task: FC = ({ children }) => (
       <TaskCheck></TaskCheck>
     </TouchableOpacity>
 
-    <Text>{children}</Text>
+    <Text style={{ fontFamily: 'Inter_400Regular' }}>{children}</Text>
   </TaskStyle>
 );
 

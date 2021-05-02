@@ -6,11 +6,7 @@ import { TitleTasksView } from './Tasks.style';
 import 'react-native-get-random-values';
 import { v4 as uuid } from 'uuid';
 import TasksListEmpty from '../../components/tasks/tasksListEmpty/TasksListEmpty';
-
-type TasksType = {
-  id: string;
-  value: string;
-}[];
+import { TasksType } from '../../types/views/taskType';
 
 const TasksView = () => {
   const [tasks, setTasks] = useState<TasksType>([]);
@@ -20,7 +16,8 @@ const TasksView = () => {
       ...tasks,
       {
         id: uuid(),
-        value: value
+        value: value,
+        check: false
       }
     ]);
   };
@@ -30,7 +27,14 @@ const TasksView = () => {
       <TitleTasksView>Tasks</TitleTasksView>
 
       {tasks.length > 0 ? (
-        <FlatList data={tasks} renderItem={itemData => <Task>{itemData.item.value}</Task>} />
+        <FlatList
+          data={tasks}
+          renderItem={itemData => (
+            <Task id={itemData.item.id} tasks={tasks} setTasks={setTasks}>
+              {itemData.item.value}
+            </Task>
+          )}
+        />
       ) : (
         <TasksListEmpty />
       )}

@@ -28,5 +28,6 @@ npm run web // if you want run on Web
 | [Styled components](https://styled-components.com/)          | Style in JS                                 |
 | [uuid](https://www.npmjs.com/package/uuid)                   | Create a random UUID                        |
 | [expo-font](https://docs.expo.io/guides/using-custom-fonts/) | Fonts for expo                              |
+| [Font Awesome](https://fontawesome.com/)                     | Icons                                       |
 
 ## 📷 Graphics

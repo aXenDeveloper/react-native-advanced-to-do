@@ -1,5 +1,7 @@
 import React, { FC, useState } from 'react';
-import { Text, Platform, Alert } from 'react-native';
+import { Platform, Alert } from 'react-native';
+import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { FormStyle, FormTextInput, FormTouchable } from './Form.style';
 import { FormType } from './Form.type';
 
@@ -29,7 +31,7 @@ const Form: FC<FormType> = ({ addTask }) => {
       />
 
       <FormTouchable onPress={() => handleSubmit(taskFormValue)}>
-        <Text>+</Text>
+        <FontAwesomeIcon icon={faPlus} />
       </FormTouchable>
     </FormStyle>
   );

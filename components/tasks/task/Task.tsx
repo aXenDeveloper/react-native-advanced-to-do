@@ -1,4 +1,4 @@
-import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import React, { FC, useState } from 'react';
 import { TouchableOpacity } from 'react-native';
@@ -21,6 +21,11 @@ const Task: FC<TaskType> = ({ children, setTasks, tasks, id }) => {
     setTasks(currentTasks);
   };
 
+  const handleDelete = () => {
+    const tasksWithoutItem = tasks.filter(el => el.id !== id);
+    setTasks(tasksWithoutItem);
+  };
+
   return (
     <TaskStyle>
       <TouchableOpacity onPress={handleCheck} activeOpacity={0.5}>
@@ -30,6 +35,10 @@ const Task: FC<TaskType> = ({ children, setTasks, tasks, id }) => {
       </TouchableOpacity>
 
       <TaskText checked={isCheck}>{children}</TaskText>
+
+      <TouchableOpacity onPress={handleDelete}>
+        <FontAwesomeIcon size={25} icon={faTimes} />
+      </TouchableOpacity>
     </TaskStyle>
   );
 };

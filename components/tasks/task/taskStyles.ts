@@ -29,6 +29,8 @@ export const TaskText = styled.Text`
     css`
       text-decoration: line-through;
     `}
+
+  margin-right: auto;
 `;
 
 export const stylesTask = StyleSheet.create({

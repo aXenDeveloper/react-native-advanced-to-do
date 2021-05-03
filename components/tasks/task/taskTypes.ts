@@ -4,4 +4,5 @@ export type TaskType = {
   id: string;
   tasks: TasksType;
   setTasks(el: TasksType): void;
+  date: string;
 };

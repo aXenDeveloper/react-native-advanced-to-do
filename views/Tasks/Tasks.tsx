@@ -12,12 +12,15 @@ const TasksView = () => {
   const [tasks, setTasks] = useState<TasksType>([]);
 
   const addTask = (value: string) => {
+    const date = new Date();
+
     setTasks([
       ...tasks,
       {
         id: uuid(),
         value: value,
-        check: false
+        check: false,
+        date: `${date.getMonth()}/${date.getDate()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`
       }
     ]);
   };
@@ -30,7 +33,7 @@ const TasksView = () => {
         <FlatList
           data={tasks}
           renderItem={itemData => (
-            <Task id={itemData.item.id} tasks={tasks} setTasks={setTasks}>
+            <Task id={itemData.item.id} tasks={tasks} setTasks={setTasks} date={itemData.item.date}>
               {itemData.item.value}
             </Task>
           )}

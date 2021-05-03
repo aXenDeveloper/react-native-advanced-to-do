@@ -22,6 +22,10 @@ export const TaskCheck = styled.View`
   color: #fff;
 `;
 
+export const TaskTextViews = styled.View`
+  flex: 1;
+`;
+
 export const TaskText = styled.Text`
   font-family: 'Inter_400Regular';
   ${({ checked }: { checked: boolean }) =>
@@ -29,8 +33,11 @@ export const TaskText = styled.Text`
     css`
       text-decoration: line-through;
     `}
+`;
 
-  margin-right: auto;
+export const TaskDateText = styled.Text`
+  font-family: 'Inter_400Regular';
+  font-size: 12px;
 `;
 
 export const stylesTask = StyleSheet.create({

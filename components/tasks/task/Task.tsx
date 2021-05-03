@@ -26,7 +26,6 @@ const Task: FC<TaskType> = ({ children, setTasks, tasks, id, date }) => {
     currentTask.check = !currentTask.check;
 
     setTasks(currentTasks);
-    console.log(tasks);
   };
 
   const handleDelete = () => {

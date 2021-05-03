@@ -17,8 +17,6 @@ npm run ios // if you want run on IOS
 npm run web // if you want run on Web
 ```
 
-## 🔨 Deployment
-
 ## 📂 Packages
 
 | Packages                                                     | Description                                 |
@@ -31,3 +29,8 @@ npm run web // if you want run on Web
 | [Font Awesome](https://fontawesome.com/)                     | Icons                                       |
 
 ## 📷 Graphics
+
+![1](https://raw.githubusercontent.com/aXenDeveloper/react-native-basic-to-do/main/screenshots/1.png)
+![2](https://raw.githubusercontent.com/aXenDeveloper/react-native-basic-to-do/main/screenshots/2.png)
+![3](https://raw.githubusercontent.com/aXenDeveloper/react-native-basic-to-do/main/screenshots/3.png)
+![4](https://raw.githubusercontent.com/aXenDeveloper/react-native-basic-to-do/main/screenshots/4.png)
